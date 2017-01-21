@@ -4,7 +4,7 @@
 // change the order of the list.
 // Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].
 
-// My Solution
+// My own
 function nonUniqueElements(data) {
     return data.filter(function (i) {
         var count = 0;
@@ -17,7 +17,7 @@ function nonUniqueElements(data) {
     });
 }
 
-// After reviewing Another solution as for me the best:
+// Best
 function nonUniqueElements(data) {
     return data.filter(function(a){
         return data.indexOf(a) !== data.lastIndexOf(a)
